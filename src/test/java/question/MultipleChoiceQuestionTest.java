@@ -22,22 +22,11 @@ class MultipleChoiceQuestionTest {
         ClassLoader classLoader = getClass().getClassLoader();
         List<Path> questions;
         try (Stream<Path> paths = Files.walk(Paths.get(Objects.requireNonNull(classLoader.getResource("questions")).getPath().substring(1)))) {
-            questions = paths
-                .filter(Files::isRegularFile)
-                .collect(Collectors.toList());
-        }
-
-        List<QuestionReader> readers;
-        try(Stream<Path> paths = questions.stream()) {
-            readers = paths
-                .map(QuestionReader::new)
-                .collect(Collectors.toList());
-        }
-
-        try(Stream<QuestionReader> stream = readers.stream()) {
-            stream
-                .map(this::testQuestion)
-                .forEach(Assert::assertTrue);
+            paths
+                    .filter(Files::isRegularFile)
+                    .map(QuestionReader::new)
+                    .map(this::testQuestion)
+                    .forEach(Assert::assertTrue);
         }
     }
 
@@ -64,17 +53,14 @@ class MultipleChoiceQuestionTest {
         try {
             List<MultipleChoiceQuestion> questions = reader.read();
             try(Stream<MultipleChoiceQuestion> stream = questions.stream()) {
-                stream
-                    .forEach(multipleChoiceQuestion -> {
-                        Answer correct = null;
-                        for (Answer answer : multipleChoiceQuestion.getAnswers()) {
-                            if (answer.isCorrect()) {
-                                correct = answer;
-                                break;
+                assertTrue(stream
+                        .map(MultipleChoiceQuestion::getAnswers)
+                        .allMatch(answers -> {
+                            for (Answer answer: answers) {
+                                if (answer.isCorrect()) return true;
                             }
-                        }
-                        assert(correct != null);
-                    });
+                            return false;
+                        }));
             }
         } catch (IOException e) {
             e.printStackTrace();
