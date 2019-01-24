@@ -1,0 +1,100 @@
+Which of the following contains the primary goals and objectives of security? 
+A network's border perimeter 
+The CIA Triad *
+A stand-alone system 
+The Internet 
+Vulnerabilities and risks are evaluated based on their threats against which of the following? 
+One or more of the CIA Triad principles *
+Data usefulness 
+Due care 
+Extent of liability 
+Which of the following is a principle of the CIA Triad that means authorized subjects are granted timely and uninterrupted access to objects? 
+Identification 
+Availability *
+Encryption 
+Layering 
+Which of the following is not considered a violation of confidentiality? 
+Stealing passwords 
+Eavesdropping 
+Hardware destruction *
+Social engineering 
+Which of the following is not true? 
+Violations of confidentiality include human error. 
+Violations of confidentiality include management oversight. 
+Violations of confidentiality are limited to direct intentional attacks. *
+Violations of confidentiality can occur when a transmission is not properly encrypted. 
+STRIDE is often used in relation to assessing threats against applications or operating systems. Which of the following is not an element of STRIDE? 
+Spoofing 
+Elevation of privilege 
+Repudiation 
+Disclosure *
+If a security mechanism offers availability, then it offers a highlevel of assurance thatauthorized subjects can _________________________ the data, objects, and resources. 
+Control 
+Audit 
+Access *
+Repudiate 
+____________ refers to keeping information confidential that is personally identifiable or which might cause harm, embarrassment, or disgrace to someone if revealed. 
+Seclusion 
+Concealment 
+Privacy *
+Criticality 
+All but which of the following items requires awareness for all individuals affected? 
+Restricting personal email 
+Recording phone conversations 
+Gathering in formation about surfing habits
+Thebackup mechanism used to retain email messages *
+What element of data categorization management can override all other forms of access control?
+Classification
+Physical access
+Custodian responsibilities
+Taking ownership *
+What ensures that the subject of an activity or event cannot deny that the event occurred?
+CIA Triad
+Abstraction
+Nonrepudiation *
+Hash totals
+Which of the following is the most important and distinctive concept in relation to layered security?
+Multiple
+Series *
+Parallel
+Filter
+Which of the following is not considered an example of data hiding?
+Preventing an authorized reader of anobject fromd eleting that object *
+Keeping a database from being accessed by unauthorized visitors
+Restricting a subject at a lower classification level from accessing data at a higherclas-sification level
+Preventing an application from accessing hardware directly
+What is the primary goal of change management?
+Maintaining documentation
+Keeping users informed of changes
+Allowing rollback of failed changes
+Preventing security compromises *
+What is the primary objective of data classification schemes?
+To control access to objects for authorized subjects
+To formalize and stratify the process of securing data based on assigned labels of importance and sensitivity *
+To establish a transaction trail for auditing accountability
+To manipulate access control stop rovide for the most efficient means to grant or restrict functionality
+Which of the following is typically not a characteristic considered when classifying data?
+Value
+Size of object *
+Useful lifetime
+National security implications
+What are the two common data classification schemes?
+Military and privatesector *
+Personal and government
+Private sector and unrestricted sector
+Classified and unclassified
+Which of the following is the lowest military data classification for classified data?
+Sensitive
+Secret *
+Proprietary
+Private
+Which commercial business/private sector data classification is used tocontrol information about individuals within an organization?
+Confidential
+Private *
+Sensitive
+Proprietary
+Data classifications are used to focus security controls overall but which of the following?
+Storage
+Processing
+Layering *
+Transfer
